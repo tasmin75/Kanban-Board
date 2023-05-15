@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Data Structure:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+KanbanData =
 
-## Available Scripts
+[List = {
+Name: “To do”
+CreatedAt: ‘2PM 02/02/2023’,
+Tasks: [
+{ name: 'make ds'
+description: '',
+id:'1',
+},
+{
+name: 'make project'
+description: '',
+id:'2',
+}
+]
+},
+List = {
+Name: “To do”
+CreatedAt: ‘2PM 02/02/2023’,
+Tasks: [
+{ name: 'make ds'
+description: '',
+id:'1',
+},
+{
+name: 'make project'
+description: '',
+id:'2',
+}
+]
+}
+]
+```
 
-In the project directory, you can run:
+# libraries we will use :-
 
-### `npm start`
+- recoil/redux
+- material UI and icons.
+- react-beautiful-dnd
+- moment
+- uuid
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# PARTICIPANTS:-
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Tasmin Ansari
+2. Vinay Sudakuntty
+3. Veena Udkude
+4. Shivpujan Kumar
+5. Fahad Ansari
 
-### `npm test`
+# Kanban-Board-project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- STEP1:- Set up the React development environment: To develop a React application, you need to have Node.js and npm installed on your system.
+  Once you have them installed, you can create a new React project using the Create React App command.
 
-### `npm run build`
+- STEP2:- Define the Kanban Board layout: The Kanban Board layout typically consists of columns for different stages of a task's life cycle, such as "To Do", "In Progress", and "Done".
+  You can use HTML and CSS to define the layout of your Kanban Board.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- STEP3:- Create React components: In React, you can break down your UI into smaller reusable components.
+  For example, you can create a "Card" component to represent a task, a "Column" component to represent a column on the board, and a "Board" component to represent the entire Kanban Board.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- STEP4:- Implement drag and drop functionality: To allow users to move tasks between columns, you can use a drag and drop library such as React DnD or react-beautiful-dnd.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- STEP5:- Manage the state of the application: In React, you can manage the state of your application using the "useState" hook or the "useReducer" hook.
+  You can use the state to keep track of the tasks and their status on the board.
 
-### `npm run eject`
+- STEP6:- Add functionality for adding and editing tasks: You can add functionality to allow users to add new tasks to the board and edit existing tasks.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- STEP7:- Implement customizations: You can allow users to customize the Kanban Board by adding features such as changing the color of the board or adding custom tags to tasks.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- STEP8:- Test and deploy: Test your application thoroughly to ensure it's working as expected, and then deploy it to a hosting platform such as Netlify, Heroku, or GitHub Pages.
