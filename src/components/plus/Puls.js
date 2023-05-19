@@ -5,9 +5,7 @@ import AddIcon from '@mui/icons-material/Add';
 import { Button } from '@mui/material';
 
 
-function Plus(props) {     //imported in board.js and Home.js
-
-
+function Plus(props) {    
     const { card_outer, card_inner, placeholder, addBoard, onClick } = props
     const myref = useRef()
     const [showInput, setShowInput] = useState(false)

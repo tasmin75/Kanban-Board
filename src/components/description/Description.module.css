@@ -1,64 +1,114 @@
-.top{
-    margin: 0px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.top {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.title{
-    display: flex;
-    gap: 20px;
-    align-items: center;
+.title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-.description{
-    margin-top: 20px;
+.description {
+  margin-top: 40px;
 }
-.top_description{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.outer{
-    width: 80%;
-}
-.inner{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(247, 246, 244);
-    padding: 20px;
-    border-radius: 10px;
-}
-.content{
-    margin: 20px
-}
-.buttons{
-    margin: 10px;
-}
-.cancelIcon{
-    cursor: pointer;
+.top_description {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.titleEdit{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.outer {
+  margin-left: 50px;
+}
+.out {
+  width: 80%;
+}
+.inner {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 246, 244);
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+.content {
+  margin: 20px;
+  margin-left: 50px;
+  text-align: left;
+}
+.textarea {
+  height: 50px;
+  padding-left: 5px;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+.buttons {
+  margin: 10px;
+}
+.cancelIcon {
+  cursor: pointer;
+}
 
+.titleEdit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.input{
-    border: 1px solid black;
-    height: 25px;
-    border-radius: 5px;
-    padding-left: 5px;
+.input {
+  border: 1px solid black;
+  height: 25px;
+  border-radius: 5px;
+  padding-left: 5px;
 }
-.checkIcon{
-    cursor: pointer;
-    
+.checkIcon {
+  cursor: pointer;
 }
 
-.b_location{
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.b_location {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 50px;
+}
+.activity {
+  margin-top: 50px;
+}
+.activity_top {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 20px 0;
+}
+.comment {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 15px;
+}
+
+.details {
+  border: solid rgb(142, 126, 126) 1px;
+  background-color: rgb(217, 245, 245);
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.commentLine {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0;
+}
+.commentInput {
+  height: 30px;
+  width: 60%;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.dialog {
+  background-color: rgb(244, 242, 239);
 }
