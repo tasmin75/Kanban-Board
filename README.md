@@ -36,6 +36,8 @@ id:'2',
 ]
 ```
 
+Deploy link:- https://kanban-board-viyn.onrender.com/
+
 # libraries we will use :-
 
 - recoil/redux
