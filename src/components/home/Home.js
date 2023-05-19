@@ -5,9 +5,11 @@ import Plus from "../plus/Puls";
 import { v4 as uuid } from "uuid";
 import { useRecoilState } from "recoil";
 import { Boards } from "../atoms";
-// Import the CSS styles for the Quill editor
+
 
 function Home() {
+
+
   const [boards, setBoards] = useRecoilState(Boards);
   const [target, setTarget] = useState({ cardId: "", boardId: "" });
   const [targetb, setTargetb] = useState({ boardId: "" });
@@ -19,7 +21,7 @@ function Home() {
     }
   }, []);
 
-  // Save board data to localStorage whenever it changes
+
   useEffect(() => {
     localStorage.setItem("boards", JSON.stringify(boards));
   }, [boards]);
@@ -39,6 +41,7 @@ function Home() {
     ]);
   }
 
+
   function addCard(title, boardId) {
     const card = {
       id: uuid(),
@@ -46,7 +49,7 @@ function Home() {
       date: new Date().toLocaleString(),
       description: "",
       activities: ["Added this card to"],
-    };
+    }
     const index = boards.findIndex((board) => board.id === boardId);
 
     if (index < 0) {
@@ -138,7 +141,9 @@ function Home() {
     tempBoards[s_boardIndex].cards.splice(s_cardIndex, 1);
     tempBoards[t_boardIndex].cards.splice(t_cardIndex, 0, tempCard);
 
-    const activity = "moved from " + "" + tempBoards[s_boardIndex].title;
+    const date=new Date().toLocaleString()
+
+    const activity = "moved from " + " " + tempBoards[s_boardIndex].title+' '+date
 
     tempBoards[t_boardIndex].cards[t_cardIndex] = {
       ...tempBoards[t_boardIndex].cards[t_cardIndex],
