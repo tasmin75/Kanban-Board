@@ -1,40 +1,36 @@
-* {
-  margin: 0;
-  padding: 0;
+*{
+    margin: 0;
+    padding: 0;
 }
-
 .navBar {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.286);
-  align-items: center;
-  height: 4rem;
-  color: green;
-  position: fixed;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: rgba(98, 83, 83, 0.286);
+    align-items: center;
+    height: 4rem;
+    position: sticky;
+    top: 0px;
+    top: 0px;
+    width: 100%;
+   
 }
 
-.userImg {
-  height: 29px;
-  margin-right: 10px;
-  display: flex;
-}
+
 .right {
-  display: flex;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
-#whiteBtn {
-  background-color: white;
-  color: black;
-}
-.left Button {
-  color: white;
-  text-transform: none;
-}
-.right Button {
-  color: white;
-  text-transform: none;
+.left{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.text {
-  font-size: 20px;
-}
+
+
+
+

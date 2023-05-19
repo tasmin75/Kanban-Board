@@ -1,14 +1,51 @@
 .card {
-  margin: 15px;
-  border: 2px solid rgb(116, 147, 14);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 10px;
+    margin: 15px;
+    border: 2px solid rgb(206, 212, 185);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 10px;
+    border-radius: 5px;
+   
+    
 }
-.delIcon {
-  cursor: pointer;
+.card:hover{
+    background-color: white;
 }
-.link {
-  text-decoration: none;
+
+
+.icons{
+    opacity: 0;
+}
+
+.card:hover .icons{
+    
+    opacity: 1;
+    
+}
+
+.input{
+    padding-left:10px;
+    height: 30px;
+    border-radius: 5px;
+    background: transparent;
+}
+.editIcon{
+    cursor: pointer;
+}
+.checkIcon{
+   cursor: pointer;
+}
+
+.delIcon{
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
 }

@@ -1,11 +1,14 @@
-.navbar {
+.navbar{
   border: 2px solid yellow;
 }
 
-.boards {
+.boards{
   display: flex;
   gap: 50px;
+
 }
-.kanban {
+.kanban{
+  
   padding: 30px;
+  
 }
