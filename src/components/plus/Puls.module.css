@@ -13,10 +13,10 @@
 
 
 .inner {
-    background-color: rgb(220, 220, 208);
+    background-color: rgb(208, 220, 220);
     width: 250px;
     margin: 5px;
-    border: 2px solid rgb(232, 232, 222);
+    border: 2px solid rgba(232, 232, 222, 0.983);
     border-radius: 10px;
     padding: 0 10px ;
     padding-top: 10px;
@@ -28,4 +28,8 @@
     outline: none;
     border-radius: 5px;
     background: transparent;
+}
+.outer{
+    border:2px solid red;
+
 }

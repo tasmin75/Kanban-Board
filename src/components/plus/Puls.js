@@ -44,7 +44,7 @@ function Plus(props) {
                             <CancelIcon className={styles.icon} onClick={() => setShowInput(false)} ></CancelIcon>
                         </div>
                     </div> :
-                    <Button sx={{ width: 250 }} variant='outlined' onClick={() => setShowInput(true)} className={styles.outer}>
+                    <Button sx={{width:250}} variant='outlined' onClick={() => setShowInput(true)} className={styles.outer}>
 
                         {card_outer}
                         <AddIcon></AddIcon>

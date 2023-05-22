@@ -3,7 +3,7 @@ import { Avatar } from "@mui/material";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import style from "./Navbar.module.css";
-
+import AppsIcon from '@mui/icons-material/Apps';
 
 
 function Navbar() {
@@ -13,25 +13,31 @@ function Navbar() {
         <>
             <nav className={style.navBar}>
                 <div className={style.left}>
-                    <p >Home Task Management</p>
-                    <p>Workspace Visible</p>
+                <AppsIcon className={style.icon}/>
+                    <p >Kanban Board</p>
+                    {/* <p>Workspace Visible</p> */}
 
-                    <Button onClick={()=>{localStorage.clear()
-                    window.location.reload()
-
-                    }}>Clear</Button>
+                   
 
                 </div>
 
                 <div className={style.right}>
                    
-                    <p  startIcon={<FilterListIcon />}>
+                    {/* <p  startIcon={<FilterListIcon />}>
                         Filter
                     </p>
                     <Avatar ></Avatar>
                    
                    
-                    <Button variant="text" startIcon={<MoreHorizOutlinedIcon />} />
+                    <Button variant="text" startIcon={<MoreHorizOutlinedIcon />} /> */}
+
+
+
+                    <Button onClick={()=>{localStorage.clear()
+                    window.location.reload()
+                       
+                    }}>Clear</Button>
+
                 </div>
             </nav>
         </>

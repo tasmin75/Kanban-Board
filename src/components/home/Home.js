@@ -6,10 +6,7 @@ import { v4 as uuid } from "uuid";
 import { useRecoilState } from "recoil";
 import { Boards } from "../atoms";
 
-
 function Home() {
-
-
   const [boards, setBoards] = useRecoilState(Boards);
   const [target, setTarget] = useState({ cardId: "", boardId: "" });
   const [targetb, setTargetb] = useState({ boardId: "" });
@@ -21,13 +18,9 @@ function Home() {
     }
   }, []);
 
-
   useEffect(() => {
     localStorage.setItem("boards", JSON.stringify(boards));
   }, [boards]);
-
-  // console.log(Object.isExtensible(boards))
-  // Object.preventExtensions(boards)
 
   function addBoard(title) {
     setBoards([
@@ -41,7 +34,6 @@ function Home() {
     ]);
   }
 
-
   function addCard(title, boardId) {
     const card = {
       id: uuid(),
@@ -49,7 +41,7 @@ function Home() {
       date: new Date().toLocaleString(),
       description: "",
       activities: ["Added this card to"],
-    }
+    };
     const index = boards.findIndex((board) => board.id === boardId);
 
     if (index < 0) {
@@ -57,7 +49,6 @@ function Home() {
     }
 
     const newBoards = [...boards];
-    // newBoards[index].cards.push(card)
 
     newBoards[index] = {
       ...newBoards[index],

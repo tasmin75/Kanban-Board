@@ -1,36 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 .navBar {
-    display: flex;
-    justify-content: space-between;
-   
-    background-color: rgba(98, 83, 83, 0.286);
-    align-items: center;
-    height: 4rem;
-    position: sticky;
-    top: 0px;
-    top: 0px;
-    width: 100%;
-   
-}
+  display: flex;
+  justify-content: space-between;
 
+  background-color: rgba(243, 235, 235, 0.286);
+  align-items: center;
+  height: 4rem;
+  position: sticky;
+  top: 0px;
+  top: 0px;
+  width: 100%;
+  box-shadow: 1px 0px 5px black;
+}
 
 .right {
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
-.left{
-    margin-left: 30px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.right button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #eee;
+  font-family: cursive;
+  color: black;
+  border-radius:0.5rem;
 }
 
+.right button:hover{
+    background-color:rgb(177, 232, 253);
+    color:#000;
+}
 
+.left {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
+.left p {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
 
-
+.icon {
+  font-size: 2rem;
+  font-weight: 800;
+}
